@@ -26,7 +26,7 @@ def main():
         return
     loader = ClassLoader()
     j_class = loader.load_class(class_file)
-    print(j_class)
+    print(j_class.name)
     method = j_class.get_main_method()
     interpreter.Interpreter.exec_method(method)
 

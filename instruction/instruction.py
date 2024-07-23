@@ -1401,7 +1401,7 @@ class ISUB(Instruction):
         operand_stack = frame.operand_stack
         val1 = operand_stack.pop_int()
         val2 = operand_stack.pop_int()
-        res = val1 - val2
+        res = val2 - val1
         operand_stack.push_int(res)
 
 
@@ -1413,7 +1413,7 @@ class LSUB(Instruction):
         operand_stack = frame.operand_stack
         val1 = operand_stack.pop_long()
         val2 = operand_stack.pop_long()
-        res = val1 - val2
+        res = val2 - val1
         operand_stack.push_long(res)
 
 
@@ -1425,7 +1425,7 @@ class FSUB(Instruction):
         operand_stack = frame.operand_stack
         val1 = operand_stack.pop_float()
         val2 = operand_stack.pop_float()
-        res = val1 - val2
+        res = val2 - val1
         operand_stack.push_float(res)
 
 
@@ -1437,7 +1437,7 @@ class DSUB(Instruction):
         operand_stack = frame.operand_stack
         val1 = operand_stack.pop_double()
         val2 = operand_stack.pop_double()
-        res = val1 - val2
+        res = val2 - val1
         operand_stack.push_double(res)
 
 
